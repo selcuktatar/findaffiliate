@@ -4,8 +4,15 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/ui',
-    '@nuxt/eslint'
+    '@nuxt/eslint',
+    '@nuxt/content'
   ],
+  ui: {
+    theme: {
+      colors: ['primary', 'error']
+    },
+    colorMode: false,
+  },
 
   css: ['~/assets/css/main.css'],
 
